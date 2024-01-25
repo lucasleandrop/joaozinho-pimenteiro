@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  background-color: blue;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.body {
+  background-color: yellow;
+}
+
+.footer {
+  background-color: red;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 400px;
+  background-color: #f1f1f1;
+}
+
+main {
+  display: flex;
+}
+.content,
+.products {
+  flex: 1;
+  padding: 10px;
+}
+
+.molhos,
+.agridoces,
+.geleias,
+.productsList {
+  cursor: pointer;
+}
+li {
+  padding: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
