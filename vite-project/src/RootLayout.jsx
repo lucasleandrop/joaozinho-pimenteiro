@@ -5,13 +5,13 @@ import AsideBar from "./components/AsideBar";
 
 export default function RootLayout() {
   return (
-    <>
+    <div>
       <Header />
       <main>
         <AsideBar />
         <Outlet />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }

@@ -1,9 +1,11 @@
+import style from "./Card.module.css";
+
 export default function Card({ name, img }) {
   return (
-    <div className="card">
-      <img src={img} style={{ width: "50px", height: "auto" }} alt={name} />
+    <div className={style.card}>
+      <img src={img} alt={name} />
 
-      <p> {name}</p>
+      <div className={style.cardText}> {name}</div>
     </div>
   );
 }

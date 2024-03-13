@@ -1,33 +1,33 @@
-import logoGuara from "../assets/logo-guara.png";
-import logoJoao from "../assets/logo-joaozinho.png";
+import { Link } from "react-router-dom";
 
+import logoJoao from "../assets/logo-joaozinho.png";
+import InstagramPage from "./InstagramPage";
+import FacebookPage from "./FacebookPage";
+import WhatasappDirect from "./WhatsappDirect";
+import styles from "./Header.module.css";
 export default function Header() {
   return (
-    <header className="header">
+    <header className={styles.header}>
       <div>
-        <img
-          src={logoJoao}
-          alt="logo-joaozinho"
-          style={{
-            width: "200px",
-            height: "auto",
-          }}
-        />
+        <h3>Nossas redes sociais</h3>
+        <br />
+        <InstagramPage />
+
+        <FacebookPage />
       </div>
-      <div className="titles">
-        <h1>Joãozinho Pimenteiro</h1>
-        <h2>Molhos Artesanais Gourmet</h2>
-      </div>
+      <Link to="/">
+        <div>
+          <img
+            className={styles.logoJoaozinho}
+            src={logoJoao}
+            alt="logo-joaozinho"
+          />
+        </div>
+      </Link>
       <div>
-        <img
-          src={logoGuara}
-          alt="logo-guara"
-          style={{
-            width: "200px",
-            height: "auto",
-            marginRight: "10px",
-          }}
-        />
+        <h3>Fale conosco</h3>
+        <br />
+        <WhatasappDirect />
       </div>
     </header>
   );

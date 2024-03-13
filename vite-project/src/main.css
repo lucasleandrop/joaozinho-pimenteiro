@@ -3,53 +3,49 @@
   margin: 0;
 }
 
-.header {
-  background-color: blue;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.body {
-  background-color: yellow;
-}
-
-.footer {
-  background-color: red;
-}
-
-.container {
-  display: flex;
-}
-
-.sidebar {
-  width: 400px;
-  background-color: #f1f1f1;
-}
-
 main {
   display: flex;
+  min-height: 100vh;
+  background-color: rgb(238, 238, 238);
 }
-.content,
+
 .products {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
   flex: 1;
   padding: 10px;
-}
-
-.molhos,
-.agridoces,
-.geleias,
-.productsList {
-  cursor: pointer;
-}
-li {
-  padding: 30px;
-  align-items: center;
   justify-content: center;
+  margin: 0;
+  gap: 50px;
+}
+.linkProduct {
+  text-decoration: none;
+  box-sizing: border-box;
+  width: 270px;
+  height: 200px;
+  display: block;
 }
 
-ul,
-li {
-  list-style-type: none;
+.single-product {
+  display: flex;
+  flex: 1;
+  align-content: center;
+  justify-content: start;
+  flex-direction: column;
+  text-align: center;
+}
+
+.imgProduct img {
+  width: 300px;
+  height: auto;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.descriptionProduct,
+.suggestionProduct {
+  margin-bottom: 20px;
 }

@@ -1,0 +1,41 @@
+.containerHome {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: rgb(238, 238, 238);
+  text-align: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+p {
+  font-size: 17px;
+}
+
+/* Smartphones (320px - 480px) */
+@media screen and (max-width: 480px) {
+  p {
+    font-size: 14px; /* Reduce font size for better readability on smaller screens */
+  }
+}
+
+/* Tablets (481px - 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  p {
+    font-size: 15px; /* Adjust font size for tablets */
+  }
+}
+
+/* Laptops (769px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* No specific adjustments needed for laptops, keep original styles */
+}
+
+/* Desktops (1025px - 1200px) */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  /* You can add specific adjustments for desktops here, if needed */
+}
+
+/* Large screens (1201px and above) */
+@media screen and (min-width: 1201px) {
+  /* You can add specific adjustments for large screens here, if needed */
+}

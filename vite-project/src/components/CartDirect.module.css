@@ -1,0 +1,21 @@
+.cartDirect {
+  display: inline-block;
+  font-size: 1.1rem;
+  color: red;
+}
+
+.cartDirect a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+}
+
+.cartDirect svg {
+  margin-right: 5px;
+  fill: red;
+}
+
+.whatsUnderline a:hover {
+  text-decoration: underline;
+}
