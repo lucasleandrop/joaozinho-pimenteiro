@@ -1,0 +1,21 @@
+.facebookPage {
+  display: inline-block;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.facebookPage a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+}
+
+.facebookPage a:hover {
+  text-decoration: underline;
+}
+
+.facebookPage svg {
+  margin-right: 5px;
+  fill: #4267b2;
+}

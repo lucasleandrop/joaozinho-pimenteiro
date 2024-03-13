@@ -1,0 +1,47 @@
+.footer {
+  background-color: lightgray;
+  display: flex;
+  padding: 5px;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #000;
+}
+.footer a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Smartphones (320px - 480px) */
+@media screen and (max-width: 480px) {
+  .footer {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+    gap: 10px; /* Reduce gap for smaller screens */
+  }
+}
+
+/* Tablets (481px - 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+}
+
+/* Laptops (769px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* You can add specific adjustments for laptops here, if needed */
+}
+
+/* Desktops (1025px - 1200px) */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  /* You can add specific adjustments for desktops here, if needed */
+}
+
+/* Large screens (1201px and above) */
+@media screen and (min-width: 1201px) {
+  .footer {
+    gap: 20px; /* Increase gap for larger screens (optional) */
+  }
+}
