@@ -2,12 +2,14 @@ import { useState, useEffect } from "react";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import AsideBar from "./components/AsideBar";
 
 export default function RootLayout() {
   const [displayMenu, setDisplayMenu] = useState(true);
   const [width, setWidth] = useState(window.innerWidth);
+
+  const location = useLocation();
 
   const handleWindowSizeChange = () => {
     setWidth(window.innerWidth);
@@ -21,6 +23,12 @@ export default function RootLayout() {
   }, []);
 
   const isMobile = width <= 480;
+
+  useEffect(() => {
+    if (isMobile) {
+      setDisplayMenu(false);
+    }
+  }, [location.pathname]);
 
   const renderContent = () => {
     if (!isMobile) {

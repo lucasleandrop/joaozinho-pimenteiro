@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import { FaPhone } from "react-icons/fa";
 
@@ -10,6 +10,23 @@ const AsideBar = () => {
   const [menuGeleias, setMenuGeleias] = useState(false);
   const [menuAgridoces, setMenuAgridoces] = useState(false);
   const [menuMolhos, setMenuMolhos] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    const url1 = "/geleias";
+    const url2 = "/molhos";
+    const url3 = "/agridoces";
+    // Fecha o menu quando a URL mudar
+    if (
+      location.pathname !== url1 ||
+      location.pathname !== url2 ||
+      location.pathname !== url3
+    ) {
+      setMenuGeleias(false);
+      setMenuAgridoces(false);
+      setMenuMolhos(false);
+    }
+  }, [location.pathname]); // Executa sempre que a URL mudar
 
   useEffect(() => {
     const { pathname } = window.location;

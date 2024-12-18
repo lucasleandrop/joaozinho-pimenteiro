@@ -26,6 +26,20 @@ main {
   margin: 0;
   gap: 50px;
 }
+
+@media screen and (max-width: 480px) {
+  .products {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    padding: 15px;
+    justify-content: center;
+    margin: 10px;
+    gap: 50px;
+  }
+}
+
 .linkProduct {
   text-decoration: none;
   box-sizing: border-box;
