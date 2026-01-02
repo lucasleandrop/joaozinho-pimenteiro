@@ -17,7 +17,7 @@ export default function GeleiasPage() {
         <Card name={"Geléia de Manga com Maracuja e Pimenta"} img={mangaImg} />
       </Link>
       <Link to="geleia-de-morango" className="linkProduct">
-        <Card name={"Geléia de Morango com ou sem Pimenta"} img={morangoImg} />
+        <Card name={"Geléia de Morango Pimenta"} img={morangoImg} />
       </Link>
       <Link to="geleia-ao-vinho" className="linkProduct">
         <Card name={"Geléia de Abacaxi ao Vinho"} img={abacaxiVinhoImg} />
